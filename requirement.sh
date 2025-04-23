@@ -8,6 +8,6 @@ fi
 if ! command -v pip &> /dev/null; then
     echo "pip not found. Installing pip..."
     python3 -m ensurepip --upgrade
+else
+    pip install matplotlib seaborn numpy osmnx networkx pandas folium scikit-learn selenium webdriver-manager
 fi
-
-pip install matplotlib seaborn numpy osmnx networkx pandas folium scikit-learn selenium webdriver-manager
